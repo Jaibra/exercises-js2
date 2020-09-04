@@ -5,11 +5,21 @@ A person named Alice is defined below.
   2. Add a method "sayName" so this person can say their own name. Hint: use 'this' keyword to access the name property.
 
 */
+  
 
 let person = {
     name: "Alice",
     age: 25,
+    greet: function () {
+      return "Hello everybody!";
+    },
+    sayName: function () {
+      const name = this.name;
+      return "My name is " + name;
+    },
   };
+
+
   
   /*
   DO NOT EDIT ANYTHING BELOW THIS LINE
